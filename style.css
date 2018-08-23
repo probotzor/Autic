@@ -1,0 +1,92 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+
+#road {
+    border: solid lightgray 10px;
+    position: relative;
+    width: 400px;
+    height: 600px;
+    margin: auto;
+    overflow: hidden;
+    background: red;
+}
+
+#bgImage {
+    position: relative;
+    width: 400px;
+    height: 600px;
+    margin: auto;
+    overflow: hidden;
+    background: url(road.jpg) repeat-y;
+    -webkit-animation: none;
+    animation: none;
+}
+
+
+
+@-webkit-keyframes bg {
+    from { background-position: left -1790px; }
+    to { background-position: left 0px; }
+  }
+  
+  @keyframes bg {
+    from { background-position: left -1790px; }
+    to { background-position: left 0px; }
+  }
+ 
+  
+
+
+.car {
+    position: absolute;
+    width: 30px;
+    height: 50px;
+}
+
+.enemies {
+    width: 30px;
+    height: 50px;
+}
+
+#car {
+    top: 450px;
+}
+
+#enemyCar {
+    
+    position: absolute;
+}
+
+#info {
+	float: left;
+    display: inline;
+}
+
+#roadover {
+	border: solid lightgray 10px;
+    position: relative;
+    width: 400px;
+    height: 600px;
+    margin: auto;
+    overflow: hidden;
+    background: red;
+	z-index: 500;
+}
+
+#izgubio {
+   text-align: center;
+   position: relative;
+   top: 45%;
+   transform: translateY(-50%); 
+   font-weight: bold;
+   font-size: 3em;
+   color: white;
+}
